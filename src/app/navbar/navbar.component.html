@@ -1,0 +1,17 @@
+
+<div class="row">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand logo" href="/">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <span>{{title}}</span>
+                </a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/gallery']">Home</a></li>
+                <li routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}"><a [routerLink]="['/search']">Search</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,19 @@
+
+<div class="container-fluid search">
+    <h2>{{title}}</h2>
+    <div class="input-group search_input">
+        <input type="text" class="form-control" placeholder="Search by keyword ..." (keyup)="searchBy=searchInput.value" #searchInput>
+        <div class="input-group-btn">
+            <button class="btn btn-default search-btn" submit="submit" (click)="searchBy=searchInput.value">
+                <i class="glyphicon glyphicon-search search-ico"></i>
+            </button>
+        </div>
+    </div>
+    <ul id="thumnailslist">
+        <li *ngFor="let image of (searchImages | imageSearch:searchBy)">
+            <a [routerLink]="['/image', image.id]">
+                <img src="{{image.url}}" class="tn" width=200>
+            </a>
+        </li>
+    </ul>
+</div>

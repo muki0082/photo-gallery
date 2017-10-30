@@ -1,0 +1,44 @@
+
+<div class="wrapper">
+    <nav id="sidebar" [ngClass]="classes">
+        <div class="sidebar-header">
+            <h3>Greeeeen Gallery</h3>
+        </div>
+        <ul class="list-unstyled components">
+            <li>Filter by category</li>
+            <button class="btn btn-lg btn-info" [class.active]="filterBy=='all'" (click)="filterBy='all'">
+                <span class="glyphicon glyphicon-play"></span>
+                All<span class="selected"></span>
+            </button>
+            <button class="btn btn-lg btn-info" [class.active]="filterBy=='test1'" (click)="filterBy='test1'">
+                <span class="glyphicon glyphicon-play"></span>
+                Test1
+            </button>
+            <button class="btn btn-lg btn-info" [class.active]="filterBy=='test2'" (click)="filterBy='test2'">
+                <span class="glyphicon glyphicon-play"></span>
+                Test2
+            </button>
+            <button class="btn btn-lg btn-info" [class.active]="filterBy=='test3'" (click)="filterBy='test3'">
+                <span class="glyphicon glyphicon-play"></span>
+                Test3
+            </button>
+        </ul>
+    </nav>
+<div id="central-content" class="container-fluid">
+    <button type="button" id="sidebarCollapse" class="btn btn-info-navbar-btn" (click)="clickEvent()">
+        <i class="glyphicon glyphicon-align-left"></i>
+        Toggle Sidebar
+    </button>
+    <h2>{{title}}</h2>
+    <div class="container-fluid">
+        
+        <ul id="thumnailslist">
+            <li *ngFor="let image of (visibleImages | imageFilter:filterBy)">
+                <a [routerLink]="['/image', image.id]">
+                    <img src="{{image.url}}" class="tn" width="200" >
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+</div>

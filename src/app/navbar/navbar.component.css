@@ -1,0 +1,79 @@
+
+.container-fluid {
+   padding: 0;
+}
+
+nav {
+    font-family: 'Lato', sans-serif;
+    /*background-color: rgba(26, 186, 0, 1);*/
+    border: none;
+    height: 60px;
+    background: url('../../assets/app_img/nav-background.jpg') no-repeat fixed;
+}
+
+.navbar-header {
+    width: 250px; 
+}
+
+.navbar-brand {
+    width: 200px;
+    margin: 5px 0 0 25px !important;
+    background: url('../../assets/app_img/gal-logo.png') no-repeat;
+}
+
+.navbar-nav > li {
+
+}
+
+.glyphicon-align-left:before {
+    content: none;
+}
+
+.logo {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    
+}
+
+.logo > span {
+    margin-left: 35px;
+}
+
+.logo-img {
+    background: url('../../assets/app_img/gal-logo.png');
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+/* nav buttons */
+ul.nav a {
+    font-weight: 600;
+    color: #FFF;
+    margin: 15px 10px 0 10px;
+    background-color: transparent;
+    border-radius: 30px;
+    border: 2px solid;
+    padding: 0.5rem 18px;
+    transition: all 150ms linear;
+}
+
+/* nav button active */
+.navbar-nav>.active>a {
+    
+}
+
+.navbar-nav>.active>a:hover {
+    color: #66615B;
+    background: #FFF;
+}
+
+ul.nav a:focus {
+    background: none;
+}
+
+ul.nav a:hover {
+    color: #66615B;
+    background: #FFF;
+}

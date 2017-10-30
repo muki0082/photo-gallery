@@ -1,0 +1,159 @@
+
+ul { padding: 0; margin: 20px auto; }
+li { display: inline-block; margin: auto; }
+
+.tn {
+    margin: 6px;
+    border: 4px solid #eee;
+    border-radius: 10px;
+    box-shadow: #555 1px 1px 8px 1px;
+}
+
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    margin-top: 60px;
+}
+
+.gallery {
+    background: url('../../assets/app_img/app-background.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: civer;
+}
+
+#sidebar .btn {
+    width: 100%;
+    background-color: transparent;
+    border-bottom: 1px solid #FFF;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.btn:focus,.btn:active {
+   outline: none !important;
+}
+
+.sidebar-header > h3 {
+    margin: 10px 0;
+}
+
+#sidebar .btn.active, #sidebar .btn:active, #sidebar .btn:hover {
+    box-shadow: none;
+    background: #397f27;
+    transition: all 150ms linear;
+}
+
+#sidebar .btn.focus {
+    border: none;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    min-height: 90vh;
+    transition: all 0.3s;
+    /********************/
+    /*background: #649eff;*/
+    font-family: 'Lato', sans-serif;
+    color: #FFF;
+    border: none;
+    background: rgba(55, 170, 27, 1); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(55, 170, 27, 1), rgba(255, 255, 255, 0)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(55, 170, 27, 1), rgba(255, 255, 255, 0)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(55, 170, 27, 1), rgba(255, 255, 255, 0)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(55, 170, 27, 1), rgba(255, 255, 255, 0));
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    border-bottom: 1px solid #FFF;
+}
+
+#sidebar p {
+    font-size: 1.1em;
+    font-weight: 300;
+    
+}
+
+#sidebar.active1 {
+    margin-left: -250px;
+}
+
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.components {
+    margin: 0;
+}
+
+.components > li {
+    border-bottom: 1px solid #FFF;
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 17px;
+}
+
+.components > button {
+    font-size: 17px;
+}
+
+.selected {
+    width: 0; 
+    height: 0; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+    border-right:10px solid #FFF; 
+    float: right;
+    margin-top: 2px;
+    display: none;
+}
+
+#central-content {  
+    margin: 15px 15px;
+}
+
+#central-content > h2 {
+    color: rgba(55, 170, 27, 1);
+}
+
+#sidebarCollapse {
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background: rgba(55, 170, 27, 1);
+    color: #FFF;
+}
+
+#sidebarCollapse:hover {
+    background: #397f27;
+    transition: 150ms linear;
+}
+
+#sidebarCollapse:active {
+    border: none;
+}
+
+@media(max-width: 768px) {
+    .wrapper {
+        margin-top: 100px;
+    }
+    
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active1 {
+        margin-left: 0;
+    }
+
+    #central-content {
+        margin-top: 50px; 
+    }
+}
