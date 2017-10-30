@@ -1,7 +1,10 @@
 
+<div class="wrapper">
 <div class="container">
-    <button (click)="goBack()" class="btn btn-lg btn-info">Go Back</button>
     <div class="col-md-12">
+        <button type="button" id="backBtn" class="btn btn-info-navbar-btn" (click)="goBack()">
+            Go Back
+        </button>
         <img src="{{image.url}}" class="img-responsive img-full-size">
     </div>
 </div>
@@ -11,4 +14,5 @@
             {{image.caption}}
         </span>
     </div>
+</div>
 </div>

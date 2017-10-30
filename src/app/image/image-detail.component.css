@@ -1,4 +1,8 @@
 
+.wrapper {
+    margin-top: 70px;
+}
+
 .img-container {
     margin: 24px;
     box-shadow: #555 1px 2px 8px 1px;
@@ -19,14 +23,33 @@
 #caption {
     font-size: 1.5em;
     font-family: "Open Sans", sans-serif;
-    padding: 18px;
-    color: #222;
-    border: 1px solid #bbb;
+    padding: 15px;
+    color: rgba(55, 170, 27, 1);
+    border: 1px solid rgba(55, 170, 27, 1);
+    border-radius: 20px;
     width: 900px;
 }
 
 .caption-row {
-    padding: 24px;
     text-align: center;
     margin-top: 10px;
+}
+
+#backBtn {
+    border-radius: 20px;
+    padding: 10px 15px;
+    background: rgba(55, 170, 27, 1);
+    color: #FFF;
+    margin-top: 5px;
+}
+
+#backBtn:hover {
+    background: #397f27;
+    transition: 150ms linear;
+}
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    background: rgba(55, 170, 27, 1);
+    transition: 150ms linear;
 }

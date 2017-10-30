@@ -130,6 +130,7 @@ li { display: inline-block; margin: auto; }
     padding: 10px 15px;
     background: rgba(55, 170, 27, 1);
     color: #FFF;
+    border: none;
 }
 
 #sidebarCollapse:hover {
