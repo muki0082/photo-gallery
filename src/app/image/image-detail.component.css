@@ -53,3 +53,17 @@
     background: rgba(55, 170, 27, 1);
     transition: 150ms linear;
 }
+
+@media(max-width: 768px) {
+
+    .wrapper {
+        margin-top: 120px;
+    }
+
+    #caption {
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 15px;
+    }
+
+}

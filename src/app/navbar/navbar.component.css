@@ -77,3 +77,27 @@ ul.nav a:hover {
     color: #66615B;
     background: #FFF;
 }
+
+@media(max-width: 768px) {
+
+    .navbar-nav {
+        margin-top: 0;
+    }
+
+    ul.nav a, ul.nav>.active>a {
+        background: rgb(55, 170, 27);
+        margin: 0;
+        border-radius: 0;
+        border: none;
+        border-top: 1px solid #FFF;
+        border-bottom: 1px solid #FFF;
+    }
+
+    ul.nav a:hover, .navbar-nav>.active>a:hover {
+        background: #397f27;
+        border: none;
+        color: #FFF;
+        transition: 150ms linear;
+    }
+
+}
