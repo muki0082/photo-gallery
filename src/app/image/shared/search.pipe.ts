@@ -6,7 +6,7 @@ export class ImageSearchPipe implements PipeTransform {
         if (criteria == 'all') { return items } else 
             return items.filter(item => {
                 //return item.caption == criteria;
-                return item.caption.includes(criteria);
+                return item.caption.toLowerCase().includes(criteria.toLowerCase());
             })
     }
 }
