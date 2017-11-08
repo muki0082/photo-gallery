@@ -37,6 +37,16 @@ Assuming you have node, npm and git installed:
 
 4. Open http://localhost:4200/ in your browser.
 
+5. If neccessary install bootstrap:
+npm install bootstrap --save
+import the css in .angular-cli.json:
+    "...
+        "styles": [
+            "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+            "styles.scss"
+        ]
+    ..."
+
 ## TO-DO
 
 1. Alter data source from this set of predefined images, to get data from a remote server. 
